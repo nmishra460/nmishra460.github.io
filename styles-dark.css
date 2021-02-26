@@ -1,41 +1,6 @@
-#fade p {
-    margin-top: 25px;
-    font-size: 21px;
-    text-align: center;
-
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
-         -o-animation: fadein 2s; /* Opera < 12.1 */
-            animation: fadein 2s;
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-body {  
+body {
     background-color: #FFFFFF;
-    color: #212529;
+    color: #d5d7da;
     font-size: 1rem;
     font-weight:400;
     line-height: 1.5;
@@ -45,6 +10,17 @@ body {
     font-family: Oxygen;
     height: 50%;
 }
+
+img {
+  filter: grayscale(50%);
+  filter: brightness(85%);     
+}
+
+video {
+  filter: grayscale(50%);
+  filter: brightness(80%); 
+}
+
 
 .center {
   margin: 0;
@@ -56,45 +32,43 @@ body {
 
 }
 
+.video-mask{
+    width: 350px;
+    border-radius: 10px; 
+    overflow: hidden; 
+}
 
 #personal li {
     list-style-type: none;
 }
 
 #Harvard {
-    color: #6e0101;
+    color: #54a7ff;
 }
 
 #PPPL {
-    color:purple;
+    color:#54a7ff;
 }
 
 #Princeton {
-    color: #733000;
+    color: #54a7ff;
+}
+
+#IACS {
+    color:#54a7ff;
 }
 
 #LLP {
-    color:green;
+    color:#54a7ff;
+}
+
+#GUSH {
+    color: #54a7ff;
 }
 
 a:link {
   text-decoration: none;
 }
-
-#Biopticon {
-    color: #002163;
-}
-
-#HCURA {
-    color: #7A8841;
-}
-
-#GUSH {
-    color: #8C0048;
-}
-
-#IACS {
-    color: #193300;
 
 input[type="text"] {
     line-height: 2.0;
@@ -106,7 +80,6 @@ input[type="text"]:hover {
     transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
 }
 
-/* Took this from Lab 8, since I really liked it! */
 button, input[type="submit"] {
     background-color: #d9edff;
     border: 1px solid transparent;
