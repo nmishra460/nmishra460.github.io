@@ -56,12 +56,9 @@ body {
 
 }
 
-li{
-    margin: 8px 0;
-}
-
 #personal li {
     list-style-type: none;
+    margin: 8px 0;
 }
 
 #Harvard {
