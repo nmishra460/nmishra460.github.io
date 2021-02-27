@@ -56,6 +56,9 @@ body {
 
 }
 
+li{
+    margin: 10px 0;
+}
 
 #personal li {
     list-style-type: none;
